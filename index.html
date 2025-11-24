@@ -3,95 +3,100 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TangledTangerine - Indie Game Dev</title>
+<title>Tangled Tangerine</title>
 <link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
-body { background:#fff; color:#111; display:flex; flex-direction:column; min-height:100vh; }
-a { text-decoration:none; color:inherit; }
-header { padding:4rem 2rem; text-align:center; border-bottom:1px solid #e0e0e0; }
-header h1 { font-size:3rem; font-weight:700; }
-header p { font-size:1.2rem; color:#555; margin-top:0.5rem; }
-
-main { flex:1; padding:4rem 2rem; max-width:900px; margin:0 auto; text-align:center; }
-section { margin-bottom:3rem; }
-h2 { font-size:2rem; margin-bottom:1rem; font-weight:600; }
-p { font-size:1.1rem; color:#333; }
-
-.card-container { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; }
-.card { background:#f7f7f7; padding:2rem; border-radius:12px; flex:1 1 300px; max-width:400px;
-transition:transform 0.3s, box-shadow 0.3s; position:relative; cursor:default; }
-.card:hover { transform:translateY(-10px); box-shadow:0 15px 30px rgba(0,0,0,0.1); }
-.card h3 { font-weight:600; margin-bottom:1rem; text-align:left; }
-.card p { font-size:1rem; color:#222; text-align:left; }
-
-.contact-section { text-align:center; margin-top:2rem; }
-.contact-icons { display:inline-flex; gap:1.5rem; align-items:center; justify-content:center; flex-wrap:wrap; }
-.contact-icons a { display:block; width:50px; height:50px; }
-.contact-icons img { width:100%; height:100%; object-fit:contain; border-radius:8px; transition: transform 0.2s; }
-.contact-icons img:hover { transform: scale(1.1); }
-
-footer { text-align:center; padding:1.5rem 1rem; border-top:1px solid #e0e0e0; font-size:0.9rem; color:#777; }
+body {
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #ed812e;
+  color: #fff;
+}
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+header img { width: 100%; max-width: 900px; height: auto; display: block; margin: 0 auto; border-radius: 25px; }
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.12);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(6px);
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+section p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.links a { padding: 14px 26px; background: #fff; color: #ed812e; text-decoration: none; font-weight: 700; border-radius: 15px; transition: transform 0.2s ease; }
+.links a:hover { transform: scale(1.08); }
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
 </style>
 </head>
 <body>
-
 <header>
-<h1>TangledTangerine</h1>
-<p>Indie game developer.</p>
+  <img src="banner.png" alt="Banner" />
 </header>
 
-<main>
 <section>
-<h2>About Me</h2>
-<p>I'm an indie game developer who is bad at art and music. I like creating small games with some intresting choice of mechanics :D</p>
+  <h2>About Me</h2>
+  <p>
+    Hey! I’m Tangled Tangerine an indie game developer who loves creating stylized, creative, and fun digital worlds. I experiment a lot, build weird ideas, and try to make games that feel fresh and full of personality.
+    I work on everything from prototypes to full projects, always learning, polishing, and pushing my style forward.
+  </p>
 </section>
 
 <section>
-<h2>Developer Notes</h2>
-<div class="card-container">
-<div class="card">
-<h3>Random Code Insight</h3>
-<p>Sometimes a single missing semicolon can destroy hours of work. Always blame the semicolon.</p>
-</div>
-<div class="card">
-<h3>Game Idea Brainstorm</h3>
-<p>A game where physics constantly changes every 10 seconds. You never know if gravity is up or down.</p>
-</div>
-<div class="card">
-<h3>Bug Chronicles</h3>
-<p>That moment when a bug looks like a feature and you leave it in because it’s kinda fun.</p>
-</div>
-<div class="card">
-<h3>Design Philosophy</h3>
-<p>Keep mechanics simple, but add enough chaos to make the player laugh or scream unexpectedly.</p>
-</div>
-</div>
+  <h2>My Journey</h2>
+  <p>
+    I started making games because I loved seeing ideas come to life on screen. Over time, I went from tiny experiments to full-on projects, learning something new with every build. I’m always exploring new styles, mechanics, and ways to make my games stand out.
+  </p>
 </section>
 
-<section class="contact-section">
-<h2>Connect With Me</h2>
-<div class="contact-icons">
-<a href="mailto:iamtangledtangerine@gmail.com">
-<img src="https://icon-library.com/images/email-icon-png-transparent/email-icon-png-transparent-0.jpg" alt="Email Icon">
-</a>
-<a href="https://www.youtube.com/@TangledTangerine" target="_blank">
-<img src="https://static.vecteezy.com/system/resources/thumbnails/042/127/234/small/white-square-bordered-youtube-logo-on-transparent-background-free-png.png" alt="YouTube Icon">
-</a>
-<a href="https://tangledtangerine.itch.io" target="_blank">
-<img src="https://www.svgrepo.com/show/452232/itch-io.svg" alt="itch.io Icon">
-</a>
-<a href="https://github.com/TangledTangerine" target="_blank">
-<img src="https://pngimg.com/d/github_PNG58.png" alt="GitHub Icon">
-</a>
-</div>
+<section>
+  <h2>Philosophy</h2>
+  <p>
+    I believe games should feel alive-stylized visuals, smooth movement, satisfying feedback, and a strong sense of personality. Every project I work on is built around that idea: make it fun, make it clean, make it memorable.
+  </p>
 </section>
-</main>
+
+<section>
+  <h2>Tools & Tech</h2>
+  <p>
+    I mainly work with Python and Pygame, creating crisp 2D games with tight controls and polished art. I keep experimenting with shaders, animation techniques, and systems to push my projects further.
+  </p>
+</section>
+<section>
+  <h2>Links</h2>
+  <p>Here are some places where you can find more about my work and updates.</p>
+  <div class="links">
+    <a href="https://tangledtangerine.itch.io" target="_blank">Itch.io</a>
+    <a href="https://youtube.com/@TangledTangerine" target="_blank">YouTube</a>
+    <a href="https://x.com/TangledTangerne" target="_blank">Twitter</a>
+  </div>
+</section>
 
 <footer>
-&copy; 2025 TangledTangerine. All rights reserved.
-</footer>
-
+  © 2025 Tangled Tangerine. All rights reserved.
+</section>
+<footer>
 </body>
 </html>
-
